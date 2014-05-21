@@ -116,4 +116,4 @@ LineNumberComponent = React.createClass
 
 
   shouldComponentUpdate: (newProps) ->
-    isEqualForProperties(newProps, @props, 'screenRow', 'maxLineNumberDigits')
+    not isEqualForProperties(newProps, @props, 'screenRow', 'maxLineNumberDigits')

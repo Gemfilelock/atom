@@ -28,7 +28,7 @@ describe "EditorView", ->
 
       editorView.attachToDom = ({ heightInLines, widthInChars } = {}) ->
         heightInLines ?= @getEditor().getBuffer().getLineCount()
-        @height(getLineHeight() * heightInLines)
+        @height(getLineHeightInPixels() * heightInLines)
         @width(getCharWidth() * widthInChars) if widthInChars
         $('#jasmine-content').append(this)
 
